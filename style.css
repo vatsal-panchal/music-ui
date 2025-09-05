@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&family=Hachi+Maru+Pop&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* 📱 Sirf mobile UI ke liye */
 @media (max-width: 952px) {
   * {
     margin: 0;
@@ -15,8 +14,8 @@
   body {
     height: 100%;
     width: 100%;
-    background-color:black;
-    -webkit-tap-highlight-color: transparent; /* Mobile Safari/Chrome */
+    background-color: black;
+    -webkit-tap-highlight-color: transparent; 
   }
   nav {
     display: flex;
@@ -36,7 +35,9 @@
   .icons {
     display: flex;
     gap: 1vw;
+    margin-left: auto; 
   }
+
   .icons i {
     color: white;
     font-size: 1.5rem;
@@ -67,7 +68,7 @@
     color: white;
   }
   .names:hover {
-    background-color:white;
+    background-color: white;
     color: black;
   }
   main h1 {
@@ -169,7 +170,6 @@
   }
 }
 
-/* 💻 Laptop/Desktop users ke liye UI lock */
 @media (min-width: 953px) {
   body {
     background: black;
