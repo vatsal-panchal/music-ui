@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&family=Hachi+Maru+Pop&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 📱 Sirf mobile UI ke liye */
+@media (max-width: 952px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    -webkit-tap-highlight-color: transparent; /* Mobile Safari/Chrome */
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 20px;
+  }
+  .profile {
+    height: 50px;
+    width: 50px;
+    background: url(https://i.pinimg.com/736x/1a/ce/15/1ace1533d7b7adb74f3d980c9ce508b6.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    object-fit: cover;
+    background-position: center;
+  }
+  .icons {
+    display: flex;
+    gap: 1vw;
+  }
+  .icons i {
+    color: white;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 50px;
+  }
+  h1 {
+    color: white;
+    margin-left: 5vw;
+  }
+  .list {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-left: 15px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .names {
+    padding: 8px 25px;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  .names:hover {
+    background-color:white;
+    color: black;
+  }
+  main h1 {
+    color: white;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .card-container {
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .card {
+    flex: 0 0 auto;
+    background: url(https://i.pinimg.com/736x/e0/79/a3/e079a38cddc826ad39b0d9b5ef0ca913.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+  }
+  #card2 {
+    background: url(https://i.pinimg.com/736x/cf/ce/b6/cfceb6c98e952e3922c6671578c0a984.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #card3 {
+    background: url(https://i.pinimg.com/1200x/29/0e/36/290e3641108c645dd1542b360386bcf1.jpg);
+    background-size: cover;
+  }
+  #card4 {
+    background: url(https://i.pinimg.com/736x/2f/64/12/2f6412f4ddea74299346daeb746754ce.jpg);
+    background-size: cover;
+  }
+  #card5 {
+    background: url(https://i.pinimg.com/736x/1f/f5/a0/1ff5a07f477f982e18572937f550e79f.jpg);
+    background-size: cover;
+  }
+  .card-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .card-icons i {
+    font-size: 1.3rem;
+    color: white;
+  }
+  #play-btn {
+    color: white;
+    font-size: 3rem;
+  }
+  .playlist {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .playlist-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 10px 15px;
+    backdrop-filter: blur(10px);
+  }
+  .playlist-item img {
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .playlist-info {
+    flex: 1;
+    margin-left: 15px;
+  }
+  .playlist-info h3 {
+    font-size: 1rem;
+    color: white;
+  }
+  .playlist-info p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .playlist-item i {
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* 💻 Laptop/Desktop users ke liye UI lock */
+@media (min-width: 953px) {
+  body {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    height: 100vh;
+    text-align: center;
+  }
+  body * {
+    display: none !important;
+  }
+  body::before {
+    content: " This site is only for Mobile";
+    display: block;
+  }
+}
